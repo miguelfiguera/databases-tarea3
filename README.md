@@ -5,6 +5,10 @@
 - C.I:V-23.558.789
 - Telefono: 0424-1727988
 
+## Explicacion:
+
+Estos son todos los ejercicios de la tercera evaluacion de sql en bases de datos I.
+
 # 1 Primera busqueda:
 
 1. World Tabla city:
