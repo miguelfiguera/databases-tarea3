@@ -1,9 +1,14 @@
-# Datos del Estudiante:
+# Datos de los Estudiantes:
 
-- Miguel Figuera
+- Miguel Figuera C.I: 23.558.789
+- Iromy Leon C.I: V-30.243.131
+- Alejandra Herde C.I: V-23.711.974
+- Greimar Marin C.I: V-29.686.611
 - Seccion 8B
-- C.I:V-23.558.789
-- Telefono: 0424-1727988
+
+## Introducción
+
+Este repositorio contiene una colección de scripts de SQL que resuelven varios ejercicios de la tercera evaluación de la materia Bases de Datos I. Las consultas están organizadas en diferentes secciones y se ejecutan sobre las bases de datos `world`, `Dell-store-normal-1.0` y `Pedidos`.
 
 ## Explicacion:
 
@@ -100,7 +105,9 @@ WHERE firstname = 'ALRECW' OR firstname = 'ZLVTIK';
 - Ejercicio 9.- Localice el correo y el teléfono de los usuarios "user16626”, de “user14212” y de “user1689”
 
 ```sql
-
+SELECT email, phone
+FROM customers
+WHERE username in ('user16626', 'user14212', 'user1689');
 ```
 
 # 2 Ordernar SQL por palabra calve
@@ -245,7 +252,7 @@ Ejercicio 2.- Localice las fechas de los pedidos del Sr. Paz y ordénelos descen
 SELECT O.FECHAORDEN
 FROM ORDENES O
 JOIN CLIENTES CL ON O.CLIENTEID = CL.CLIENTEID
-WHERE CL.NOMBRECONTACTO LIKE '%Paz' -- Ejemplo: 'LORENA PAZ'
+WHERE CL.NOMBRECONTACTO LIKE '%Paz'
 ORDER BY O.FECHAORDEN DESC;
 ```
 
